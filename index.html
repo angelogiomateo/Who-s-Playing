@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Who's Playing?</title>
+    <!-- Normalize     -->
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <!-- Style.css -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/8715386900.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Oswald|Pacifico|Permanent+Marker" rel="stylesheet">
+</head>
+
+<body>
+    <section class="hero">
+        <h1>Who's<br \>Playing?</h1>
+    </section>
+    <section class="loader-box">
+        <div class="loader">
+            <div class="loader_figure"></div>
+            <p class="loader_label">Loading</p>
+        </div>
+    </section>
+    <main>
+        <form>
+            <input class="search js-search" type="text" placeholder="Search for a band">
+            <div class="searchResults"></div>
+        </form>
+        <div class="band-box">
+        </div>
+    </main>
+    <footer>
+        <div class="cr">
+            <p class="copyright">Copyright © 2017 Angelo Gio Mateo. All rights reserved. All images are copyrighted by their respective copyright owners.</p>
+            <p class="copyright">Made with love by me, built using the Songkick, Spotify and Google Maps APIs.</p>
+            <div class="apis">
+                <a href="https://songkick.com" class="songkick"></a>
+                <a href="https://www.spotify.com" class="spotify"></a>
+                <a href="https://www.google.ca/maps" class="googlemaps"></a>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/angelogiomateo" target="_blank">
+                <p class="soc-links">@angelogiomateo</p>
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/angelo_mateo" target="_blank">
+                <p class="soc-links">angelo_mateo</p>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="module">
+            <a href="#"><i class="fa fa-times fa-4x" aria-hidden="true"></i></a>
+            <div class="description">
+                <div class="desc-info">
+                    <h1 class="bandName"></h1>
+                    <p class="bandDate"></p>
+                    <p class="bandTime"></p>
+                    <p class="bandVenue"></p>
+                    <div class="spotifyplayer"></div>
+                    <div class="relatedArtists">
+                        <h2>Related Artists</h2>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvsQZJZaBKl8XlXHS-mY4SLbQTzEliTIw" type="text/javascript"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
